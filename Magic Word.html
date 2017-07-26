@@ -1,0 +1,45 @@
+<htmnl>
+<head>
+
+    <title>Javascript</title>
+    
+</head>
+    
+    <body>
+        
+        <h1>Variables, and If Statements</h1>
+        <p>This small script will allow you to input a word into the text box and compare it against the secret passphrase. <br><br><span style="font-weight: 600">Secret Passphrase:</span>Abbracadabbra</p>
+        
+        <p style="font-weight: bold">What is the magic word?</p>
+        
+        <p><input type="text" id="magicWord" placeholder="Enter the magic word"></p>
+        
+        <p><button id="checkButton">Check Magic Word</button></p>
+
+    
+    
+    <script type="text/javascript">
+        
+       document.getElementById("checkButton").onclick = function () {
+           
+           var magicWordEntered = document.getElementById("magicWord").value;
+           
+           var magicWord = "Abbracadabbra";
+           
+           if (magicWordEntered == magicWord) {
+               
+               alert("Correct")
+               
+           } else {
+               
+               alert("Sorry, that's incorrect.")
+           }
+           
+       }
+        
+    </script>
+        
+    </body>
+
+
+</htmnl>
